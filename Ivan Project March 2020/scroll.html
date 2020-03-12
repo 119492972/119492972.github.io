@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+<div class="navbar">
+			<a href="Homepage and cv.html">Homepage and Cv</a>
+			<a href="Cloud research.html">Our services and company information</a>
+			<a href="Ebus1.html">Service selection</a>
+</head>
+<!-- here is the JQuery image scroll code for running the images-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<div id="slider">
+<figure>
+	
+<img src="France.jpg">
+<img src="Rowing.jpg">
+<img src="Romania.jpg">
+<img src="Romania1.jpg">
+<img src="trade-finance.jpg">
+
+
+</figure>
+
+<button class="btn-prev"><i class="fa fa-arrow-circle-left"></i> </button>
+<button class="btn-next"><i class="fa fa-arrow-circle-right"></i> </button>
+
+</div>
+
+
+
+<script>
+	$(document).ready(function(){
+		var x = 0;
+    // for next slide
+		$('.btn-next').click(function(){
+    
+        x= (x<=300)?(x+100):0;
+      $('figure').css('left', -x+'%');
+		});
+
+
+     // for prev slide
+     $('.btn-prev').click(function(){
+    
+        x= (x>=100)?(x-100):400;
+      $('figure').css('left', -x+'%');
+    });
+	});
+</script>
+
+<style>
+
+
+#slider{
+    width: 90%;
+    height:600px;
+    margin:50px auto;
+    box-shadow: 0px 0px 10px 3px grey;
+    position: relative;
+}
+
+
+div#slider { overflow: hidden; border: 5px solid #3949ab; }
+div#slider figure img { width: 20%; height:100%;  float: left; }
+div#slider figure { 
+	position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+  
+ 
+}
+
+.btn-next, .btn-prev{
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  color: white;
+  background: #3949ab;
+  padding: 20px;
+  font-size: 50px;
+  border:none;
+}
+
+.btn-prev{
+  left: 0px;
+}
+.btn-next{
+  right: 0px;
+}
+
+
+</style>
+<!-- this portion of the website is used to describe the hobbies and interests portion-->
+<h1> Hobbies and interests </h1>
+		 <section id="Interests">
+		 <div class="section-inner">
+		 <h2> Sports </h2>
+		 <p> The list of sports that I have played are endless, from winning an all Ireland rowing medal to playing american football and being asked to  tryout for the irish team, my time in sport has been a colourful one to say the least.<br>
+		 There is never a dull moment when playing a sport you love, from the comradery to the harshness of training, I loved it all.<br> the training for all sports provided me with an appreciation for each skillset learned and thought me discipline and mental resiliance.<br>
+		 The thrill of going up against an opponent, to fight for every yard on the pitch and to leave a match knowing you gave it your all, that is what it is all about.
+		 
+		 <h2> Travelling with family </h2>
+		 <p> Travel is something that has peaked my interest from a very young age, with plans to travel the world with my girlfriend lined up over the coming years.<br>From the shores of France, to vineyards in Spain, the list of places I have been fortunate enough to explore is nothing short of spectacular.<br>
+		 Take the Loire valley for example,The pomp and prestige of royalty and artistry poke through the patches of forest, dominate small towns and stand preserved within manicured gardens.<br> Majestic châteaux akin to a grand castle or simply a turret clad stately family home.<br>
+		 These are places where kings and lords once resided and ran the villages and towns you lightly pedal through, or where artists, like Leonardo Da Vinci, came to showcase their work as special guests of the Monarchs.
+		 </p>
+		 <p> Then we have my country of birth, the scenic Romania. With its lush landscapes and picturesque villages, it truly is a place of beauty.<br>Romanian castles can be found in abundance, but Bran Castle in Transylvania is one of Romania's best-known landmarks  a 14th-century fortress sitting atop a hillside in the Carpathian Mountains.<br>
+		 The monument became home to the world's most notorious vampire, Count Dracula, made famous by Bram Stoker's 1987 novel about the curse of the undead.
+		 Count Dracula is based on Vlad "The Impaler Tepes" who was allegedly imprisoned here for a few months.
+		 </p>
+		 
+		 <h2> Finance </h2>
+		 <p> From a young age I have always been fascinated by the stock market, peronsally for me if there was a way to go straight from school into finance I would have taken it <br>
+		 The whole idea of finance to me is like a game of chess, pitting your knowledge against someone elses in the hope of astronomical returns. <br>
+		 I have studied the subject rigourously over the last few years and hope to someday run my own fund.
+		 </p>
+		 
+		 <h2> Travel with my girlfriend </h2>
+		 <p> having not travelled too much during my earlier years, I now have a hunger for seeing the world and to do it all with my girlfriend <br>
+		 There is something about being able to experience different cultures, see what the world has to offer and to be able to tell people about your travels that really entices me.<br>
+		 So hopefully before I must settle down with work or that my business takes off and I earn enough to go travelling with my soulmate, there is a need inside me to see everything and experience everything.
+		 </p>
+		 </div>

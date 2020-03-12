@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--this is the js file for services-->
+<script type="text/javascript" src="javascript.js"></script>
+<link rel="stylesheet" href="style.css">
+			<div class="navbar">
+			<a href="Homepage and cv.html">Homepage and Cv</a>
+			<a href="scroll.html">My interests.</a>
+			<a href="Cloud research.html">Our services and company information</a>
+			</div>
+					<!--This is where the services such as hyperautomation are given a short description using their official names in the service industry. hyperautomation, multiexperience and distributed cloud are all discussed here using official terms in case there was confusion as to the names of the service-->
+<title> Services </title>
+</head>
+<body>
+<h1>----</h1>
+<h1> Infrastructure as a Service (IaaS) </h1>
+<p> the IaaS model caters to  a businesses' needs for scalability, flexibility and reliability via the cloud, as well as negating the need to maintain hardware in the office space.
+This is a completely outsourced service that operates on a pay-to-use model and is available for public,private and also hybrid infrastructure formats.
+using the IaaS structure brings a certain degree of complexity however we here at Churchill Schwartz know that it allows our clients to have unparalleled flexibilty.
+This structure is best suited for small and medium enterprises and is a great option for a organisations that need cost effective yet scalable IT solutions capable of supporting business growth.
+</P>
+
+<h1> Software as a Service (SaaS) </h1>
+<p> Using this service model, our clients have the use of leveraging the cloud for software architecture, thus cutting back signifcantly on the burdens of operations, maintenance and support systems.
+This service is made possible using a vendor computer which runs applications on that system rather than the user's computer. The SaaS is run and managed from our centralized location which means 
+the organisations that use our services are not concerned about maintenance. This service is especially valuable for CRM or applications recquiring extensive web access. SaaS is an excellent cloud computing service for short term projects.
+</p>
+
+<h1>Platform as a Service (PaaS) </h1>
+<p>this model deploys software and infrastructure framework offered by us for businesses to develop and run applications of their own as well. PaaS clouds are developed alongside and within IaaS clouds 
+with a view on scaling the process of application deployment , making the user's expenses highly predictable. With PaaS, web applications can be developed with ease and in a time efficient manner, the cloud 
+service also carries the requisite robustness and flexibility to support the process and to run the application as smoothly as possible. it is ideal for business setups that revolve around either leveraging existing data
+sources or involving projects that require inputs from multiple developers.
+
+
+
+<form action="" id="E-Business"
+onsubmit="return false;">
+<fieldset>
+<legend> Service selection </legend>
+<label> Which service? </label>
+
+		<input type="radio"
+		name="options" 
+		value="Iaas"
+		onclick="calculateTotal()" />	
+		Infrastructure as a Service - yearly cost ($500)
+		
+		<input type="radio"
+		name="options" 
+		value="Saas"
+		onclick="calculateTotal()" />
+		Software as a Service - yearly cost ($450)
+		
+		<input type="radio"
+		name="options" 
+		value="Paas"
+		onclick="calculateTotal()" />
+		Platform as a Service - yearly cost ($600)
+		
+		<p>
+		<button onclick="calcSub()">Calculate Total Cost</button>
+		</p>
+		
+	
+		
+		</fieldset>
+		  
+		</form>
+
+	
+</body>
+</html>

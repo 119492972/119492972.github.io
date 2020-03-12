@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Cloud research </title>
+</head>
+
+<body>
+<h1> Research Lab </h1>
+  <div>
+  <h2> Hyperautomation</h2>
+  <img src="hyper.png" />
+  <p>Hyperautomation....</p>
+  </div>
+   <div>
+  <h2> Multiexperience</h2>
+   <img src="multi.png" />
+  <p>Multiexperience is....</p>
+  </div>
+   <div>
+  <h2> Distribution Cloud</h2>
+   <img src="dist.png" />
+  <p>Distribution cloud is...</p>
+  </div>
+  
+</body>
+</html>

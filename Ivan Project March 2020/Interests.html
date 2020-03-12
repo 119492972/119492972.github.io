@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<link href ="interests.css" rel= "stylesheet" type="text/css" />
+		 
+		 <div class="container">
+
+  
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="France.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="Rowing.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="Romania.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="France.jpg" style="width:100%" onclick="currentSlide(1)" alt="France">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Rowing.jpg" style="width:100%" onclick="currentSlide(2)" alt="CBC Rowing">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Romania.jpg" style="width:100%" onclick="currentSlide(3)" alt="Romania">
+    </div>
+	
+	
+	<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    
+  
+</script>
+</body>
+</html>
